@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6fb;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #5135e8;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+            background: #5135e8;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>💱 Currency Converter</header>
+
+    <div class="card">
+
+        <h2>Convert Currency</h2>
+
+        <form method="get">
+
+            <label>Amount</label>
+
+            <input
+                type="number"
+                name="amount"
+                placeholder="Enter amount"
+                step="0.01"
+                required
+            >
+
+            <label>From Currency</label>
+
+            <select name="from_currency">
+                <option value="USD">🇺🇸 USD - US Dollar</option>
+                <option value="INR">🇮🇳 INR - Indian Rupee</option>
+                <option value="EUR">🇪🇺 EUR - Euro</option>
+                <option value="GBP">🇬🇧 GBP - British Pound</option>
+                <option value="JPY">🇯🇵 JPY - Japanese Yen</option>
+                <option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+                <option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+            </select>
+
+            <label>To Currency</label>
+
+            <select name="to_currency">
+                <option value="INR">🇮🇳 INR - Indian Rupee</option>
+                <option value="USD">🇺🇸 USD - US Dollar</option>
+                <option value="EUR">🇪🇺 EUR - Euro</option>
+                <option value="GBP">🇬🇧 GBP - British Pound</option>
+                <option value="JPY">🇯🇵 JPY - Japanese Yen</option>
+                <option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+                <option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+            </select>
+
+            <button type="submit">
+                💱 Convert
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
